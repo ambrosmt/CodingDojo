@@ -1,0 +1,67 @@
+<html>
+        <head>
+            <script
+src="https://code.jquery.com/jquery-3.2.1.js"
+integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+crossorigin="anonymous"></script>
+
+                <!-- where the stuff goes down -->
+            <script>
+                var context = new (window.AudioContext || window.webkitAudioContext)();
+
+                $(document).ready(function(){
+                    console.log("yo jq works");
+                    $('form').submit(function(e){
+                        e.preventDefault();    
+                        var duration = $("input[name='duration']").val();
+                        var frequency = $("input[name='frequency']").val();
+                        $('#soundbank').append(buildSoundThing(frequency, duration));
+                    });
+
+                    function buildSoundThing(fre, dur) {
+                        return "<div class='sound-thing'><p>" + fre +"</p><p>" + dur + "</p></div>";
+                    };
+                    $("#soundbank").on("click", ".sound-thing", function(){
+                        var freq = parseInt($(this).children().first().text());
+                        console.log(freq);
+                        var dur = parseInt($(this).children().last().text());
+                        console.log(dur);
+                        var oscar = context.createOscillator();
+                        oscar.type = 'square';
+                        oscar.frequency.value = freq;
+                        oscar.connect(context.destination);
+                        oscar.start();
+                        setTimeout(function(){
+                            oscar.stop();
+                        }, dur); 
+                    });
+                    $("#Play").on("click", "#soundbank", function(){
+                        var freq = parseInt($(this).children().first().text());
+                        console.log(freq);
+                        var dur = parseInt($(this).children().last().text());
+                        console.log(dur);
+                        var oscar = context.createOscillator();
+                        oscar.type = 'square';
+                        oscar.frequency.value = freq;
+                        oscar.connect(context.destination);
+                        oscar.start();
+                        setTimeout(function(){
+                            oscar.stop();
+                        }, dur);
+                    });                  
+                });
+            </script>
+                
+        </head>
+        <body>
+            <form action="">
+                <label for="frequency">Freq:</label>
+                <input type="number" name="frequency" value="440">
+                <label for="duration">Duration:</label>
+                <input type="number" name="duration" value="250">
+                <input type="submit" value="make noise!">
+            </form>
+            <div id="soundbank"></div>
+            <button id="Play" type="button">Play Back</button>
+        </body>
+    </html>
