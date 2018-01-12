@@ -1,0 +1,78 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+.grid {
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: 1fr 1000px 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+        ". header ." 
+        ". main ."
+        ". footer .";
+}
+.nest{
+    display:inline-grid;
+}
+.box {
+    box-sizing:border-box;
+    border:dashed;
+}
+    .box box {
+        background-color: #ccc;
+        color: #444;
+    }
+#header{
+    display:flex;
+    justify-content:space-between;
+}
+#header h1{
+    font-family:'Comic Sans MS';
+    font-size:30px;
+    font-weight:bold;
+    display:inline-block;
+    line-height:50px;
+}
+#header p{
+    text-align:end;
+    line-height:50px;
+    display:inline-block;
+}
+.aboutme{
+    display:flex;
+    justify-content:space-between;
+    }
+.projects {
+    grid-column: 1fr 1fr 1fr;
+    display:flex;
+    justify-content:space-between;
+}
+#wrapper{
+    border:dashed;
+}
+#header{
+    grid-area: header;
+}
+#main{
+    grid-area:main;
+}
+#footer{
+    grid-area:footer;
+}
