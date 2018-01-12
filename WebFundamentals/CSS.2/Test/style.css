@@ -1,0 +1,80 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+.grid {
+    display:grid;
+    grid-template-columns: 1fr 500px 500px 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        ". header header ."
+        ". sidebar content ."
+        ". sidebar content ."
+        ". footer footer. ";
+    grid-gap: 10px;
+}
+.gridDuo {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2px;
+    text-align:end;
+}
+.box{
+    height:60px;
+    width:60px;
+    background-color:green;
+    justify-self:center;
+    margin-top:20px;
+}
+.inline-block{
+    height:30px;
+    width: 30px;
+    display:inline-block;
+}
+.header {
+    grid-area: header;
+}
+.sidebar {
+    grid-area: sidebar;
+}
+.content {
+    grid-area: content;
+    display:grid;
+}
+.footer {
+    grid-area: footer;
+}
+.grid > div {
+    box-sizing: border-box;
+    border:dashed;
+}
+.grid > div:nth-child(odd){
+    background-color: aqua;
+}
+.frame img{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    object-position:center;
+}
+.square {
+    height: 300px;
+    width: 300px;
+    border:dashed;
+}
