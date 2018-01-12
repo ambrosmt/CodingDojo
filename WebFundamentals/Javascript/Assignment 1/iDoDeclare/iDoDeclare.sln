@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "iDoDeclare", "iDoDeclare\iDoDeclare.njsproj", "{D17968C1-B51F-4FEA-B8EE-107A810CD3AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D17968C1-B51F-4FEA-B8EE-107A810CD3AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D17968C1-B51F-4FEA-B8EE-107A810CD3AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D17968C1-B51F-4FEA-B8EE-107A810CD3AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D17968C1-B51F-4FEA-B8EE-107A810CD3AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6345CFB8-634A-47AA-B4D0-310A92741921}
+	EndGlobalSection
+EndGlobal

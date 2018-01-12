@@ -1,0 +1,9 @@
+pip install /* comand installs the requested package. Version specific items can be specified by using [pkg name]==[version number] If not specified the latest version will be installed */
+		/* if requesting to install a package that is already installed user will be notified */ 
+pip list /* shows (list) all installed packages*/
+pip freeze /* shows (output) installed packages in requiermetns format*/
+		/* as an output comand data can be sent i.e. txt file*/
+pip uninstall /* lists all files about to be uninstalled and asks for conformation (y/n)*/
+pip show /* shows information about requested package*/
+pip search /* runs search for requested query */
+

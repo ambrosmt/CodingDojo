@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>jQueryPage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#ButtonTest").click(function(){
+                alert('.click: Bind an event handler to the "click" JavaScript event, or trigger that event on an element.');
+            });
+            $(".DisplayShow").click(function(){
+                $(".ShowMe").show();
+            });
+            $(".DisplayHide").click(function(){
+                $(".HideMe").hide();
+            });
+            $(".SlideUp").click(function(){
+                $(".SlideMeUp").slideUp();
+            });
+            $(".SlideDown").click(function(){
+                $(".SlideMeDown").slideDown();
+            });
+            $(".SlideToggle").click(function(){
+                $(".SlideToggleMe").slideToggle();
+            });
+            $(".FadeIn").click(function(){
+                $(".FadeMeIn").fadeIn();
+            });
+            $(".FadeOut").click(function(){
+                $(".FadeMeOut").fadeOut();
+            });
+            $(".AddStart").click(function(){
+                $(".AddBefore").before("NEW TEXT");
+            });
+            $(".AddList").click(function(){
+                $(".AddAppend").append("NEW Item");
+            });
+            $(".AddEnd").click(function(){
+                $(".AddAfter").after("NEW TEXT");
+            });
+            var input_txt = $("#txt_inBox").val();
+            $("#txtButton").click(function(){
+                $(".TestText").text(document.getElementById("txt_inBox").value);
+            });
+            $("#htmlButton").click(function(){
+                $(".TestText").html(document.getElementById("txt_inBox").value);
+            });
+            $("#valButton").click(function(){
+                $(".TestVal").val("<b>Try Me</b>");
+            });
+            $("#Shrink").click(function(){
+                $(".ChangeMySize").attr("width","50");
+                $(".ChangeMySize").attr("height","50");
+            });
+            $("#Grow").click(function(){
+                $(".ChangeMySize").attr("width", "300");
+                $(".ChangeMySize").attr("height","300");
+            });
+            function MakeBlue(){
+                
+            };
+        });
+    </script> 
+</head>
+<body>
+    <div id="Triggers">
+        <h1>Triggers</h1> <button id="ButtonTest">Click</button>
+    </div>
+    <div id="display"><h1>Display</h1><img class="ShowMe HideMe SlideMeUp SlideMeDown SlideToggleMe FadeMeIn FadeMeOut" 
+        src="https://i.pinimg.com/736x/36/c1/3b/36c13b0dd91dc9772f3efb9c45da00b2--vintage-christmas-trees-christmas-ideas.jpg" alt="Tree">
+        <button type="button" class="DisplayShow">Show</button>
+        <button type="button" class="DisplayHide">hide</button>
+        <div class="slide"><h1>Slide</h1>
+            <button type="button" class="SlideUp">Up</button>
+            <button type="button" class="SlideDown">Down</button>
+            <button type="button" class="SlideToggle">Toggle</button>
+        </div>
+        <div class="fade"><h1>Fade</h1>
+            <button type="button" class="FadeIn">In</button>
+            <button type="button" class="FadeOut">Out</button>
+        </div>
+    </div>
+    <div class="manipulation"><h1>Manipulation</h1>
+        <p class="AddBefore">Sample <span>Text</span> of Line One, One Line of <span>Text</span> Sample.</p>
+        <ul class="AddAppend">
+            <li>List item One</li>
+            <li>List item Two</li>
+        </ul>
+        <p class="AddAfter">Sample <span>Text</span> of Line Two, Two Lines of <span>Text</span> Samples.</p>
+        <div class="manipulation Dom_insersion">
+            <button class="AddStart">Before</button>
+            <button class="AddList">Append</button>
+            <button class="AddEnd">End</button>
+            <input type="checkbox" id="AddAttr" onchange="MakeBlue()">
+            <label for="AddAttr">Add Class</label>
+        </div>
+    </div>
+    <div class="manipulation conversion">
+        <p class="TestText">This is the <span>Text</span> That will Change.</p>
+        <p>Input field: <input type="text" id="txt_inBox" class="TestVal" value="Type Anything Here."></p>
+        <button id="htmlButton">Set as HTML</button>
+        <button id="valButton">Set an Input Feild Value</button>
+        <button id="txtButton">Set as Text</button><br>
+        <img class="ChangeMySize"src="https://vignette3.wikia.nocookie.net/thecornerclub/images/e/e1/Blast_500x500-1-.jpg/revision/latest?cb=20150213022400" alt="change my size" width="150" height="150"><br>
+        <button id="Shrink">Shrink the Image with .attr</button>
+        <button id="Grow">Grow the Image with .attr</button>
+    </div>
+</body>
+</html>
