@@ -1,0 +1,16 @@
+.Center {
+    margin: auto;
+    margin-top: 20px;
+    width: 50%;
+    border: 3px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
+
+    
+}
+
+.Bold{
+    font-weight: bold;
+}

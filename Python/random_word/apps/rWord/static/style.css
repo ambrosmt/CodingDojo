@@ -1,0 +1,19 @@
+.Center {
+    margin: auto;
+    margin-top: 20px;
+    width: 50%;
+    text-align: center;
+
+    
+}
+
+.Box{
+    border: 3px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.Bold {
+    font-weight: bold;
+}
