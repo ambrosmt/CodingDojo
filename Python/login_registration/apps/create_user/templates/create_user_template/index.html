@@ -1,0 +1,11 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>Log in</h1> 
+    <a href="/accounts/login">Log in!</a>
+    <h1>New to the site?</h1>
+    <a href="{% url 'register' %}">Sign up here</a>
+    <form action="/test">
+    <input type="submit" value="test">
+    </form>
+{% endblock %}

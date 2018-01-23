@@ -1,0 +1,21 @@
+#wrapper{
+    text-align: center;
+}
+.Center {
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+.Box{
+    border: 3px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+    /* justify-content: center; */
+    width: 70%;
+}
+.Fill{
+    width: 100%;
+}
+.Bold {
+    font-weight: bold;
+}

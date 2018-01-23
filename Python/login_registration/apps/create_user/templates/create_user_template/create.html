@@ -1,0 +1,11 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>lets make a new user</h1> 
+    <form action="/accounts/validate" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Sign Up</button>
+    </form>
+    <a href="/">Home</a>
+{% endblock %}
