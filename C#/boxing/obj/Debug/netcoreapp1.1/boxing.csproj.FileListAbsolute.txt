@@ -1,0 +1,8 @@
+c:\Users\Matthew\DojoAssignments\cSharp\boxing\bin\Debug\netcoreapp1.1\boxing.deps.json
+c:\Users\Matthew\DojoAssignments\cSharp\boxing\bin\Debug\netcoreapp1.1\boxing.runtimeconfig.json
+c:\Users\Matthew\DojoAssignments\cSharp\boxing\bin\Debug\netcoreapp1.1\boxing.runtimeconfig.dev.json
+c:\Users\Matthew\DojoAssignments\cSharp\boxing\bin\Debug\netcoreapp1.1\boxing.dll
+c:\Users\Matthew\DojoAssignments\cSharp\boxing\bin\Debug\netcoreapp1.1\boxing.pdb
+c:\Users\Matthew\DojoAssignments\cSharp\boxing\obj\Debug\netcoreapp1.1\boxing.AssemblyInfo.cs
+c:\Users\Matthew\DojoAssignments\cSharp\boxing\obj\Debug\netcoreapp1.1\boxing.dll
+c:\Users\Matthew\DojoAssignments\cSharp\boxing\obj\Debug\netcoreapp1.1\boxing.pdb
