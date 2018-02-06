@@ -1,0 +1,8 @@
+c:\Users\Matthew\DojoAssignments\cSharp\Week_1\Puzzle\bin\Debug\netcoreapp1.1\Puzzle.deps.json
+c:\Users\Matthew\DojoAssignments\cSharp\Week_1\Puzzle\bin\Debug\netcoreapp1.1\Puzzle.runtimeconfig.json
+c:\Users\Matthew\DojoAssignments\cSharp\Week_1\Puzzle\bin\Debug\netcoreapp1.1\Puzzle.runtimeconfig.dev.json
+c:\Users\Matthew\DojoAssignments\cSharp\Week_1\Puzzle\bin\Debug\netcoreapp1.1\Puzzle.dll
+c:\Users\Matthew\DojoAssignments\cSharp\Week_1\Puzzle\bin\Debug\netcoreapp1.1\Puzzle.pdb
+c:\Users\Matthew\DojoAssignments\cSharp\Week_1\Puzzle\obj\Debug\netcoreapp1.1\Puzzle.AssemblyInfo.cs
+c:\Users\Matthew\DojoAssignments\cSharp\Week_1\Puzzle\obj\Debug\netcoreapp1.1\Puzzle.dll
+c:\Users\Matthew\DojoAssignments\cSharp\Week_1\Puzzle\obj\Debug\netcoreapp1.1\Puzzle.pdb
