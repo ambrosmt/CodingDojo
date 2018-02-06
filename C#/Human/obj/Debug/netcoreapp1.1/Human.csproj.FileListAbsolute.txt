@@ -1,0 +1,8 @@
+C:\Users\Matthew\DojoAssignments\cSharp\Week_1\Human\bin\Debug\netcoreapp1.1\Human.deps.json
+C:\Users\Matthew\DojoAssignments\cSharp\Week_1\Human\bin\Debug\netcoreapp1.1\Human.runtimeconfig.json
+C:\Users\Matthew\DojoAssignments\cSharp\Week_1\Human\bin\Debug\netcoreapp1.1\Human.runtimeconfig.dev.json
+C:\Users\Matthew\DojoAssignments\cSharp\Week_1\Human\bin\Debug\netcoreapp1.1\Human.dll
+C:\Users\Matthew\DojoAssignments\cSharp\Week_1\Human\bin\Debug\netcoreapp1.1\Human.pdb
+C:\Users\Matthew\DojoAssignments\cSharp\Week_1\Human\obj\Debug\netcoreapp1.1\Human.AssemblyInfo.cs
+C:\Users\Matthew\DojoAssignments\cSharp\Week_1\Human\obj\Debug\netcoreapp1.1\Human.dll
+C:\Users\Matthew\DojoAssignments\cSharp\Week_1\Human\obj\Debug\netcoreapp1.1\Human.pdb
