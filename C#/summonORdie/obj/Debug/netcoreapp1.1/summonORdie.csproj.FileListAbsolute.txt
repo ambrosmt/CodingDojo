@@ -1,0 +1,8 @@
+c:\Users\Matthew\DojoAssignments\cSharp\Projects\summonORdie\bin\Debug\netcoreapp1.1\summonORdie.deps.json
+c:\Users\Matthew\DojoAssignments\cSharp\Projects\summonORdie\bin\Debug\netcoreapp1.1\summonORdie.runtimeconfig.json
+c:\Users\Matthew\DojoAssignments\cSharp\Projects\summonORdie\bin\Debug\netcoreapp1.1\summonORdie.runtimeconfig.dev.json
+c:\Users\Matthew\DojoAssignments\cSharp\Projects\summonORdie\bin\Debug\netcoreapp1.1\summonORdie.dll
+c:\Users\Matthew\DojoAssignments\cSharp\Projects\summonORdie\bin\Debug\netcoreapp1.1\summonORdie.pdb
+c:\Users\Matthew\DojoAssignments\cSharp\Projects\summonORdie\obj\Debug\netcoreapp1.1\summonORdie.AssemblyInfo.cs
+c:\Users\Matthew\DojoAssignments\cSharp\Projects\summonORdie\obj\Debug\netcoreapp1.1\summonORdie.dll
+c:\Users\Matthew\DojoAssignments\cSharp\Projects\summonORdie\obj\Debug\netcoreapp1.1\summonORdie.pdb
