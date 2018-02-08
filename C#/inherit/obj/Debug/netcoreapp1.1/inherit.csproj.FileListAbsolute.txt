@@ -1,0 +1,8 @@
+c:\Users\Matthew\DojoAssignments\cSharp\Week_1\inherit\bin\Debug\netcoreapp1.1\inherit.deps.json
+c:\Users\Matthew\DojoAssignments\cSharp\Week_1\inherit\bin\Debug\netcoreapp1.1\inherit.runtimeconfig.json
+c:\Users\Matthew\DojoAssignments\cSharp\Week_1\inherit\bin\Debug\netcoreapp1.1\inherit.runtimeconfig.dev.json
+c:\Users\Matthew\DojoAssignments\cSharp\Week_1\inherit\bin\Debug\netcoreapp1.1\inherit.dll
+c:\Users\Matthew\DojoAssignments\cSharp\Week_1\inherit\bin\Debug\netcoreapp1.1\inherit.pdb
+c:\Users\Matthew\DojoAssignments\cSharp\Week_1\inherit\obj\Debug\netcoreapp1.1\inherit.AssemblyInfo.cs
+c:\Users\Matthew\DojoAssignments\cSharp\Week_1\inherit\obj\Debug\netcoreapp1.1\inherit.dll
+c:\Users\Matthew\DojoAssignments\cSharp\Week_1\inherit\obj\Debug\netcoreapp1.1\inherit.pdb
