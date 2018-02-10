@@ -1,0 +1,8 @@
+C:\Users\Matthew\DojoAssignments\cSharp\Week_1\NetClock\bin\Debug\netcoreapp1.1\NetClock.deps.json
+C:\Users\Matthew\DojoAssignments\cSharp\Week_1\NetClock\bin\Debug\netcoreapp1.1\NetClock.runtimeconfig.json
+C:\Users\Matthew\DojoAssignments\cSharp\Week_1\NetClock\bin\Debug\netcoreapp1.1\NetClock.runtimeconfig.dev.json
+C:\Users\Matthew\DojoAssignments\cSharp\Week_1\NetClock\bin\Debug\netcoreapp1.1\NetClock.dll
+C:\Users\Matthew\DojoAssignments\cSharp\Week_1\NetClock\bin\Debug\netcoreapp1.1\NetClock.pdb
+C:\Users\Matthew\DojoAssignments\cSharp\Week_1\NetClock\obj\Debug\netcoreapp1.1\NetClock.AssemblyInfo.cs
+C:\Users\Matthew\DojoAssignments\cSharp\Week_1\NetClock\obj\Debug\netcoreapp1.1\NetClock.dll
+C:\Users\Matthew\DojoAssignments\cSharp\Week_1\NetClock\obj\Debug\netcoreapp1.1\NetClock.pdb
