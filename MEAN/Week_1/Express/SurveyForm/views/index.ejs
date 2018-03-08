@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="materialize/css/materialize.min.css" />
+</head>
+<body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    <div class="container">
+        <br>
+        <br>
+        <div class="card green accent-1 col s12">
+            <div class="row">
+                <div class=" col s12 ">
+                    <form method="post">
+                        <div class="row">
+                            <br>
+                            <br>
+                            <h4 class="col s5 offset-s1">Your Name:</h4>
+                            <div class="input-field col s5">
+                                <input placeholder="Dojo Ninja" name="full_name" type="text" class="valnameate">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h4 class="col s5 offset-s1">Dojo Location:</h4>
+                            <div class="input-field col s5">
+                                <select name="location">
+                                    <option value="Seattle">Seattle</option>
+                                    <option value="Silicon Valley">Silicon Valley</option>
+                                    <option value="New York">New York</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h4 class="col s5 offset-s1">Favorite Language:</h4>
+                            <div class="input-field col s5">
+                                <select name="language">
+                                    <option value="C-Sharp">C-Sharp</option>
+                                    <option value="Python">Python</option>
+                                    <option value="Java Script">Java Script</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s10 offset-s1">
+                                <textarea name="comment" class="materialize-textarea"></textarea>
+                                <label for="comment">Comment (optional)</label>
+                            </div>
+                        </div>
+                        <div class="col s9"></div>
+                        <button class="waves-effect waves-light btn" type="submit">Button</button>
+                        <div class="row"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('select').material_select();
+    });
+</script>
+</body>
+</html>
