@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="materialize/css/materialize.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    <div class="container">
+        <br>
+        <div id="Update">
+        </div>
+        <br>
+        <div class="card green accent-1 col s12">
+            <div class="row">
+                <div class=" col s12 ">
+                    <form method="post" id='DojoForm'>
+                        <div class="row">
+                            <br>
+                            <br>
+                            <h4 class="col s5 offset-s1">Your Name:</h4>
+                            <div class="input-field col s5">
+                                <input placeholder="Dojo Ninja" name="Full Name" type="text" class="valnameate">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h4 class="col s5 offset-s1">Dojo Location:</h4>
+                            <div class="input-field col s5">
+                                <select name="Location">
+                                    <option value="Seattle">Seattle</option>
+                                    <option value="Silicon Valley">Silicon Valley</option>
+                                    <option value="New York">New York</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h4 class="col s5 offset-s1">Favorite Language:</h4>
+                            <div class="input-field col s5">
+                                <select name="Language">
+                                    <option value="C-Sharp">C-Sharp</option>
+                                    <option value="Python">Python</option>
+                                    <option value="Java Script">Java Script</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s10 offset-s1">
+                                <textarea name="Comment" class="materialize-textarea"></textarea>
+                                <label for="comment">Comment (optional)</label>
+                            </div>
+                        </div>
+                        <div class="col s9"></div>
+                        <button class="waves-effect waves-light btn" type="submit">Button</button>
+                        <div class="row"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('select').material_select();
+        var socket = io.connect();
+        $('#DojoForm').submit(function (){
+            socket.emit("formStr", $('form').serializeArray());
+            return false;
+        });
+        socket.on('server_response', function (data) {
+            console.log("Form Data: " + data.Form_Data + "\n Client Id: " + data.Socket_Id);
+            var DataUpdate = document.getElementById('Update');
+            console.log(data.Form_Data);
+            var FormInfo = ``;
+            data.Form_Data.forEach(info => {
+                FormInfo += `<p>${info.name}: ${info.value}</p>`;
+            });
+            console.log(FormInfo);
+            DataUpdate.innerHTML = `
+                <div class="card light green accent-3 col s12">
+                    <div class="row">
+                        <div class=" col s10 offset-s1 ">
+                            <br>
+                            <h4>You entered the following Data:</h4>
+                            <p>${FormInfo}</p>
+                            <h5>Also...</h5> <h6>our database thought you should have a lucky number:</h6>
+                            <p> ${data.LuckyNum}</p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            `;
+        });
+    });
+</script>
+</body>
+</html>
