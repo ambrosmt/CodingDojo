@@ -1,0 +1,13 @@
+<div class="location">
+  <h1>{{this.data.name}}{{this.state}}</h1>
+  <div>
+    <ul>
+      <li>Humidity: {{this.data.main.humidity}}</li>
+      <li>Temperature (avg): {{this.data.main.temp}} &deg;C</li>
+      <li>Temperature (high): {{this.data.main.temp_min}} &deg;C</li>
+      <li>Temperature (low): {{this.data.main.temp_max}} &deg;C</li>
+      <li>Status: {{this.data.weather[0].description}}</li>
+    </ul>
+  </div>
+</div>
+<img src="../assets/images/{{this.img}}.jpeg" alt="{{this.data.name}} image">
