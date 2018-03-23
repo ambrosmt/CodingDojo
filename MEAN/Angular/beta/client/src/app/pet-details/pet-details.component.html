@@ -1,0 +1,12 @@
+<a href="/">Home</a>
+<div *ngIf="data">
+  <h1> Details about {{data.name}}</h1>
+  <h2>Pet type: {{data.type}}</h2>
+  <h2>Description: {{data.description}}</h2>
+  <h2>Skills:</h2>
+  <p *ngIf="data.skillone != ''">{{data.skillone}}</p>
+  <p *ngIf="data.skilltwo != ''">{{data.skilltwo}}</p>
+  <p *ngIf="data.skillthr != ''">{{data.skillthr}}</p>
+  <br>
+  <button (click)="deletePet(data._id); redirect()" class="btn btn-danger">Delete</button>
+</div>

@@ -1,0 +1,26 @@
+<h1>
+  Edit this pet
+</h1>
+<form *ngIf="data" method="PUT" action="/pet/{{data._id}}">
+  <label for="name">Pet Name:</label>
+  <input type="text" id="name" name="name" value="{{data.name}}">
+  <br>
+  <label for="type">Pet Type:</label>
+  <input type="text" id="type" name="type" value="{{data.type}}">
+  <br>
+  <label for="description">Desription:</label>
+  <input type="text" name="description" value="{{data.description}}">
+  <p>Skills:</p>
+  <label for="skillone">Skill 1:</label>
+  <input type="text" name="skillone" value="{{data.skillone}}">
+  <br>
+  <label for="skilltwo">Skill 2:</label>
+  <input type="text" name="skilltwo" value="{{data.skilltwo}}">
+  <br>
+  <label for="skillthr">Skill 3:</label>
+  <input type="text" name="skillthr" value="{{data.skillthr}}">
+  <br>
+  <input type="hidden" name="_id" value="{{data._id}}">
+  <button type="submit">Update Pet Info!</button>
+</form>
+<a href="/">cancel</a>
